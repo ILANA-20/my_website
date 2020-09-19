@@ -20,8 +20,8 @@ disqusShortname = ""
 
   # Provide your metadata here.
   name = "Ilana Kovalenko"
-  description = "Engineering and Science major"
-
+  description = "Engineer"
+  
   # Link custom assets relative to /static
   custom_css = []
   custom_js  = []
