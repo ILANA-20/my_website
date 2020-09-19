@@ -100,8 +100,8 @@ disqusShortname = ""
     [[params.tiles.showcase]] 
       title = "Tempus"
       subtitle = "Feugiat Amet Tempus"
-      image = "pic02.jpg"
-      url = "blogs/tempus"
+      image = "projects/image2.jpg"
+      url = "projects/project2"
 
     [[params.tiles.showcase]]
       title = "Magna"
