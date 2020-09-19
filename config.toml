@@ -1,7 +1,7 @@
 # Site settings
-baseURL = "http://example.org/"
+baseURL = "https://ilana-portfolio.netlify.app/"
 languageCode = "en-us"
-title = "ILANA"
+title = "Portfolio website of Ilana Kovalenko"
 theme = "forty"
 
 # Enter your tracking code to enable Google Analytics
@@ -19,8 +19,8 @@ disqusShortname = ""
   # CSS class.
 
   # Provide your metadata here.
-  name = "Your name"
-  description = "Your description"
+  name = "Ilana Kovalenko"
+  description = "Engineering and Science major"
 
   # Link custom assets relative to /static
   custom_css = []
@@ -37,8 +37,8 @@ disqusShortname = ""
 
   # Navigation Section
   [params.navigation]
-    title = "Forty"
-    subtitle = "By HTML5 Up"
+    title = "Ilana Kovalenko"
+    subtitle = "PORTFOLIO"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -82,8 +82,8 @@ disqusShortname = ""
     # To change the background image on the homepage banner, replace 'banner.jpg' in
     # the 'static/img' folder.
     title = "Hi, my name is Forty"
-    subtitle = "A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP\nAND RELEASED UNDER THE CREATIVE COMMONS."
-    buttonText = "Get Started"
+    subtitle = "WELCOME TO MY PORTFOLIO WEBSITE! ENJOY READING PROJECTS I WORKED ON AND GET IN TOUCH!"
+    buttonText = "My Portfolio"
 
 
   # Tiles Section
@@ -92,9 +92,9 @@ disqusShortname = ""
     # Display your showcases here.
     
     [[params.tiles.showcase]]
-      title = "Aliquam"
+      title = "Wine Consumption per Country"
       subtitle = "Ipsum Dolor Sit Amet"
-      image = "pic01.jpg"
+      image = "20170417001182_0.jpg"
       url = "blogs/aliquam"
 
     [[params.tiles.showcase]]
@@ -138,7 +138,7 @@ disqusShortname = ""
   # Section Type Two
   [params.two]
     enable = true
-    title = "Massa libero"
+    title = "About me"
     subtitle = """Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. 
     Mauris aliquet magna magna sed nunc rhoncus pharetra. 
     Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. 
@@ -172,11 +172,11 @@ disqusShortname = ""
     # by copying the corresponding map with frontmatter code.
     [[params.contact.email]]
     title = "Email"
-    email = "example@domain.com"
+    email = "ikovalenko.mam2021@london.edu"
 
     [[params.contact.phone]]
     title = "Phone"
-    phone = "(000) 000-0000 x1234"
+    phone = "+44 75 9648 8150"
 
     [[params.contact.address]]
     title = "Address"
