@@ -94,8 +94,8 @@ disqusShortname = ""
     [[params.tiles.showcase]]
       title = "Wine Consumption per Country"
       subtitle = "Ipsum Dolor Sit Amet"
-      image = "projects/project1_image.jpg"
-      url = "projects/project1"
+      image = "image.jpg"
+      url = "blogs/tempus"
 
     [[params.tiles.showcase]] 
       title = "Tempus"
