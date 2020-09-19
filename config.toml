@@ -97,7 +97,7 @@ disqusShortname = ""
       image = "projects/image1.jpg"
       url = "projects"
 
-    [[params.tiles.showcase]]
+    [[params.tiles.showcase]] 
       title = "Tempus"
       subtitle = "Feugiat Amet Tempus"
       image = "pic02.jpg"
