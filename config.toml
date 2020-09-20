@@ -93,7 +93,7 @@ disqusShortname = ""
     
     [[params.tiles.showcase]]
       title = "Alcohol Consumption per Country"
-      subtitle = "Ipsum Dolor Sit Amet"
+      subtitle = "Top 25 countries consuming the most of Beer/Wine/Spirit"
       image = "projects/image.jpg"
       url = "projects/project1"
 
@@ -105,7 +105,7 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Graphene Sensors for Detection of Autoimmune Disease"
-      subtitle = "Lorem Etiam Nullam"
+      subtitle = "T"
       image = "projects/image3.png"
       url = "projects/project3"
 
