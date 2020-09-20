@@ -73,6 +73,7 @@ NULL
 ```{r wine_plot}
 top25_wine <- top_n(drinks, 25, wine_servings)
 ggplot(data = top25_wine, mapping = aes (y = reorder(country, wine_servings), x = wine_servings)) +   geom_col(fill='dark red') +
+  geom_text(aes(label= wine_servings), vjust=0.3, color="black", size=3) +
 labs(title = "Top 25 Wine Consuming Countries", x = "Wine Servings", y = "") +
   theme_clean() +
   
@@ -83,7 +84,8 @@ NULL
 
 ```{r spirit_plot}
 top25_spirits <- top_n(drinks, 25, spirit_servings)
-ggplot(data = top25_spirits, mapping = aes (y = reorder(country, spirit_servings), x = spirit_servings)) + geom_col(fill='light blue') + 
+ggplot(data = top25_spirits, mapping = aes (y = reorder(country, spirit_servings), x = spirit_servings))+
+  geom_col(fill='light blue') + 
   geom_text(aes(label= spirit_servings), vjust=0.3, color="black", size=3) +
   labs(title = "Top 25 Spirits Consuming Countries", y = "", x = "Spirits Servings") +
   theme_clean() +
