@@ -24,7 +24,7 @@ options(digits = 3)
 knitr::opts_chunk$set(
   fig.width=6.75, 
   fig.height=6.75,
-  fig.align = "center")
+  fig.align = "center") 
 ```
 
 
@@ -51,7 +51,7 @@ Back in 2014, [fivethiryeight.com](https://fivethirtyeight.com/features/dear-mon
 ```{r, load_alcohol_data, cache=FALSE}
 library(fivethirtyeight)
 data(drinks)
-
+ 
 ```
 
 
