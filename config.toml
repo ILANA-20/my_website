@@ -105,7 +105,7 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "Graphene Sensors for Detection of Autoimmune Disease"
-      subtitle = "T"
+      subtitle = "Graphene Based Biosensors"
       image = "projects/image3.png"
       url = "projects/project3"
 
