@@ -179,7 +179,7 @@ disqusShortname = ""
     phone = "+44 75 9648 8150"
 
     [[params.contact.address]]
-    title = "Reagent Park""
+    title = "Reagent Park"
     street = "Park Road"
     city = "London, NW1 4SA"
     country = "United Kingdom"
