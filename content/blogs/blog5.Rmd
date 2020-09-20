@@ -1,7 +1,4 @@
 ---
-categories:
-  - ""
-  - ""
   date: "2020-09-28"
   description: Alhocol Consumption
   draft: false
