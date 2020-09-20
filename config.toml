@@ -1,14 +1,14 @@
 # Site settings
 baseURL = "https://ilana-portfolio.netlify.app/"
 languageCode = "en-us"
-title = "A"
+title = "My Portfolio"
 theme = "forty"
 
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 
 # Enter your disqus shortname to enable comments
-disqusShortname = ""
+disqusShortname = "" 
 
 [params]
   # You can use Markdown syntax for urls [text](//url.to/source)
