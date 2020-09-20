@@ -38,7 +38,7 @@ disqusShortname = ""
   # Navigation Section
   [params.navigation]
     title = "Ilana Kovalenko"
-    subtitle = "PORTFOLIO" 
+    subtitle = "PORTFOLIO"
     menu = "Menu"
     # Optional logo as brand stored in img/
     # logo = "logo.png"
@@ -111,7 +111,7 @@ disqusShortname = ""
 
     [[params.tiles.showcase]]
       title = "NYT mask"
-      subtitle = "Nisl Sed Aliquam"
+      subtitle = "Masks"
       image = "image4.jpg"
       url = "projects/project4"
 

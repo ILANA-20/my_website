@@ -8,7 +8,7 @@
 	<meta name="description" content="Engineer">
 	<meta name="author" content="Ilana Kovalenko">
 	<meta name="generator" content="Hugo 0.74.3" />
-	<title>NYT Mask Use Acceptance &middot; A</title>
+	<title> &middot; A</title>
 	<!-- Stylesheets -->
 	
 	<link rel="stylesheet" href="/css/main.css"/>
@@ -75,12 +75,25 @@
                     <section id="one">
                         <div class="inner">
                             <header class="major">
-                                <h1>NYT Mask Use Acceptance</h1>
+                                <h1></h1>
                             </header>
                             
                             
 
 
+<pre class="r"><code>knitr::opts_chunk$set(
+  message = FALSE, 
+  warning = FALSE, 
+  tidy=FALSE,     # display code as typed
+  size=&quot;small&quot;)   # slightly smaller font for code
+options(digits = 3)
+
+# default figure size
+knitr::opts_chunk$set(
+  fig.width=6.75, 
+  fig.height=6.75,
+  fig.align = &quot;center&quot;
+)</code></pre>
 <div id="nyt-mask-use" class="section level2">
 <h2>NYT mask use</h2>
 <p>Github source for data <a href="https://github.com/nytimes/covid-19-data/tree/master/mask-use" class="uri">https://github.com/nytimes/covid-19-data/tree/master/mask-use</a></p>
@@ -121,44 +134,44 @@ glimpse(nyt_mask_survey)</code></pre>
 # The id field is the FIPS code for the county
 county_map %&gt;% 
   sample_n(5)</code></pre>
-<pre><code>##      long      lat  order  hole piece            group    id
-## 1 2149512   283965 168055 FALSE     1 0500000US50005.1 50005
-## 2  324768  -353228  58565 FALSE     1 0500000US19085.1 19085
-## 3 1824688  -614788 169928 FALSE     1 0500000US51009.1 51009
-## 4 1932594  -428877 171507 FALSE     1 0500000US51059.1 51059
-## 5 1690103 -1549669  36749 FALSE     1 0500000US12075.1 12075</code></pre>
+<pre><code>##       long      lat  order  hole piece            group    id
+## 1 -1758251 -2492068   5410 FALSE     3 0500000US02016.3 02016
+## 2  1365751 -1464369  39088 FALSE     1 0500000US12133.1 12133
+## 3  2482073   455417  78327 FALSE     2 0500000US23029.2 23029
+## 4 -1103032   283119 107566 FALSE     1 0500000US30063.1 30063
+## 5  1526238  -652087  67801 FALSE     1 0500000US21159.1 21159</code></pre>
 <pre class="r"><code>county_data %&gt;%
     sample_n(5)</code></pre>
-<pre><code>##      id             name state census_region      pop_dens   pop_dens4
-## 1 13163 Jefferson County    GA         South [   10,   50) [ 17,   45)
-## 2 13183      Long County    GA         South [   10,   50) [ 17,   45)
-## 3 21103     Henry County    KY         South [   50,  100) [ 45,  118)
-## 4 21143      Lyon County    KY         South [   10,   50) [ 17,   45)
-## 5 37185    Warren County    NC         South [   10,   50) [ 45,  118)
-##     pop_dens6   pct_black   pop female white black travel_time land_area
-## 1 [ 25,   45) [50.0,85.3] 16272   51.6  44.3  54.1        23.1       526
-## 2 [ 25,   45) [25.0,50.0) 17113   50.0  68.1  26.1        25.1       400
-## 3 [ 45,   82) [ 2.0, 5.0) 15572   50.2  94.7   2.9        29.9       286
-## 4 [ 25,   45) [ 5.0,10.0)  8430   44.4  92.6   5.7        23.7       214
-## 5 [ 45,   82) [50.0,85.3] 20231   49.1  40.8  51.7        29.4       428
+<pre><code>##      id            name state census_region      pop_dens   pop_dens4
+## 1 29037     Cass County    MO       Midwest [  100,  500) [118,71672]
+## 2 19045  Clinton County    IA       Midwest [   50,  100) [ 45,  118)
+## 3 45071 Newberry County    SC         South [   50,  100) [ 45,  118)
+## 4 13145   Harris County    GA         South [   50,  100) [ 45,  118)
+## 5 01045     Dale County    AL         South [   50,  100) [ 45,  118)
+##     pop_dens6   pct_black    pop female white black travel_time land_area
+## 1 [ 82,  215) [ 2.0, 5.0) 100889   51.0  92.6   4.0        27.8       697
+## 2 [ 45,   82) [ 2.0, 5.0)  48051   50.9  94.2   3.1        19.2       695
+## 3 [ 45,   82) [25.0,50.0)  37783   51.1  65.6  31.2        24.4       630
+## 4 [ 45,   82) [15.0,25.0)  32876   50.1  80.1  17.0        26.6       464
+## 5 [ 82,  215) [15.0,25.0)  49484   50.5  75.3  19.6        20.9       561
 ##   hh_income su_gun4 su_gun6  fips votes_dem_2016 votes_gop_2016
-## 1     26968 [ 8,11) [ 8,10) 13163           3809           3057
-## 2     42651 [ 8,11) [ 8,10) 13183           1356           2623
-## 3     46016 [11,54] [12,54] 21103           1828           4944
-## 4     40112 [11,54] [10,12) 21143           1045           2789
-## 5     34285 [ 5, 8) [ 4, 7) 37185           6668           3302
+## 1     60350 [ 8,11) [ 8,10) 29037          14816          33006
+## 2     49559 [ 5, 8) [ 7, 8) 19045          10079          11249
+## 3     41718 [ 8,11) [ 8,10) 45071           6212          10011
+## 4     69223 [ 8,11) [10,12) 13145           4082          11931
+## 5     44889 [ 8,11) [ 8,10)  1045           4408          13798
 ##   total_votes_2016 per_dem_2016 per_gop_2016 diff_2016 per_dem_2012
-## 1             6934        0.549        0.441       752        0.583
-## 2             4109        0.330        0.638      1267        0.379
-## 3             7142        0.256        0.692      3116        0.384
-## 4             3959        0.264        0.704      1744        0.358
-## 5            10123        0.659        0.326      3366        0.679
-##   per_gop_2012 diff_2012  winner partywinner16 winner12 partywinner12 flipped
-## 1        0.412      1246 Clinton      Democrat    Obama      Democrat      No
-## 2        0.608       866   Trump    Republican   Romney    Republican      No
-## 3        0.598      1411   Trump    Republican   Romney    Republican      No
-## 4        0.628      1039   Trump    Republican   Romney    Republican      No
-## 5        0.318      3524 Clinton      Democrat    Obama      Democrat      No</code></pre>
+## 1            50715        0.292        0.651     18190        0.348
+## 2            22748        0.443        0.495      1170        0.608
+## 3            16795        0.370        0.596      3799        0.423
+## 4            16392        0.249        0.728      7849        0.268
+## 5            18617        0.237        0.741      9390        0.285
+##   per_gop_2012 diff_2012 winner partywinner16 winner12 partywinner12 flipped
+## 1        0.632     13868  Trump    Republican   Romney    Republican      No
+## 2        0.379      5700  Trump    Republican    Obama      Democrat     Yes
+## 3        0.566      2327  Trump    Republican   Romney    Republican      No
+## 4        0.723      7052  Trump    Republican   Romney    Republican      No
+## 5        0.706      7822  Trump    Republican   Romney    Republican      No</code></pre>
 <pre class="r"><code>glimpse(county_data)</code></pre>
 <pre><code>## Rows: 3,195
 ## Columns: 32
@@ -194,9 +207,8 @@ county_map %&gt;%
 ## $ winner12         &lt;chr&gt; NA, NA, &quot;Romney&quot;, &quot;Romney&quot;, &quot;Obama&quot;, &quot;Romney&quot;, &quot;Ro...
 ## $ partywinner12    &lt;chr&gt; NA, NA, &quot;Republican&quot;, &quot;Republican&quot;, &quot;Democrat&quot;, &quot;R...
 ## $ flipped          &lt;chr&gt; NA, NA, &quot;No&quot;, &quot;No&quot;, &quot;Yes&quot;, &quot;No&quot;, &quot;No&quot;, &quot;No&quot;, &quot;No&quot;,...</code></pre>
-<pre class="r"><code># we have data on 3195 FIPS....
-
-glimpse(county_map)</code></pre>
+<pre class="r"><code># we have data on 3195 FIPS....</code></pre>
+<pre class="r"><code>glimpse(county_map)</code></pre>
 <pre><code>## Rows: 191,382
 ## Columns: 7
 ## $ long  &lt;dbl&gt; 1225889, 1235324, 1244873, 1244129, 1272010, 1276797, 1273832...
@@ -206,7 +218,7 @@ glimpse(county_map)</code></pre>
 ## $ piece &lt;fct&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1...
 ## $ group &lt;fct&gt; 0500000US01001.1, 0500000US01001.1, 0500000US01001.1, 0500000...
 ## $ id    &lt;chr&gt; &quot;01001&quot;, &quot;01001&quot;, &quot;01001&quot;, &quot;01001&quot;, &quot;01001&quot;, &quot;01001&quot;, &quot;01001&quot;...</code></pre>
-<pre class="r"><code># ... but to create a map, we translate these 3195 counties to 191,382 polygons!</code></pre>
+<p>… but to create a map, we translate these 3195 counties to 191,382 polygons!</p>
 </div>
 <div id="joing-the-files" class="section level2">
 <h2>Joing the files</h2>
@@ -243,31 +255,21 @@ p3 &lt;- p1 +
 # get different colours from https://colorbrewer2.org/
 # the one shown here is https://colorbrewer2.org/#type=diverging&amp;scheme=BrBG&amp;n=6
 p4 &lt;- p1 + 
-  scale_fill_gradientn(colours = c(&#39;#8c510a&#39;,&#39;#d8b365&#39;,&#39;#f6e8c3&#39;,&#39;#c7eae5&#39;,&#39;#5ab4ac&#39;,&#39;#01665e&#39;))
-
-p1</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/plot_choropleths-1.png" width="648" style="display: block; margin: auto;" /></p>
+  scale_fill_gradientn(colours = c(&#39;#8c510a&#39;,&#39;#d8b365&#39;,&#39;#f6e8c3&#39;,&#39;#c7eae5&#39;,&#39;#5ab4ac&#39;,&#39;#01665e&#39;))</code></pre>
+<pre class="r"><code>p1</code></pre>
+<p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-5-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>p2</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/plot_choropleths-2.png" width="648" style="display: block; margin: auto;" /></p>
+<p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-6-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>p3</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/plot_choropleths-3.png" width="648" style="display: block; margin: auto;" /></p>
+<p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-7-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>p4</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/plot_choropleths-4.png" width="648" style="display: block; margin: auto;" /></p>
+<p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-8-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>p4 + labs(fill = &quot;Mask acceptance, (Mostly Yes - Mostly No)&quot;, 
           caption = &quot;“Estimates from The New York Times, based on roughly 250,000 interviews \nconducted by Dynata from July 2 to July 14, 2020”&quot;) +
   guides(fill = guide_legend(nrow = 1)) + 
   theme_map() + 
   theme(legend.position = &quot;bottom&quot;)</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/plot_choropleths-5.png" width="648" style="display: block; margin: auto;" /></p>
-</div>
-<div id="checking-for-relationships" class="section level2">
-<h2>Checking for relationships</h2>
-<p>Does mask use acceptance have any relation with some demographics? Let us explor the relationship between country household income, population, and % who voted republican in 2016</p>
-<pre class="r"><code>county_masks_full %&gt;% 
-  select(hh_income, pop, per_gop_2016, delta) %&gt;% 
-  GGally::ggpairs()+
-  theme_minimal()</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/ggpairs-1.png" width="648" style="display: block; margin: auto;" /></p>
+<p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-9-1.png" width="648" style="display: block; margin: auto;" /></p>
 </div>
 
                         </div>

@@ -1,23 +1,10 @@
 ---
-title: "NYT Mask Use Acceptance"
-author: "Your name goes here"
-date: "`r Sys.Date()`"
-output:
-  html_document:
-    highlight: zenburn
-    theme: flatly
-    toc: yes
-    toc_float: yes
-  word_document:
-    toc: yes
---- 
-
-
-
-```{r, setup, echo=FALSE}
+site: blogdown:::blogdown_site
+---
+```{r, setup, echo=TRUE}
 knitr::opts_chunk$set(
   message = FALSE, 
-  warning = FALSE,  
+  warning = FALSE, 
   tidy=FALSE,     # display code as typed
   size="small")   # slightly smaller font for code
 options(digits = 3)
@@ -80,20 +67,24 @@ We will be using Kieran Healy's `socviz` package which among other things contai
 county_map %>% 
   sample_n(5)
 
+```
+
+
+```{r}
 county_data %>%
     sample_n(5)
+```
 
-
+```{r}
 glimpse(county_data)
 # we have data on 3195 FIPS....
-
-glimpse(county_map)
-# ... but to create a map, we translate these 3195 counties to 191,382 polygons!
-
-
-
-
 ```
+
+```{r}
+glimpse(county_map)
+```
+... but to create a map, we translate these 3195 counties to 191,382 polygons!
+
 
 ## Joing the files
 
@@ -140,26 +131,28 @@ p3 <- p1 +
 p4 <- p1 + 
   scale_fill_gradientn(colours = c('#8c510a','#d8b365','#f6e8c3','#c7eae5','#5ab4ac','#01665e'))
 
+```
+
+```{r}
 p1
+```
+
+```{r}
 p2
+```
+
+```{r}
 p3
+```
+
+```{r}
 p4
+```
 
-
+```{r}
 p4 + labs(fill = "Mask acceptance, (Mostly Yes - Mostly No)", 
           caption = "“Estimates from The New York Times, based on roughly 250,000 interviews \nconducted by Dynata from July 2 to July 14, 2020”") +
   guides(fill = guide_legend(nrow = 1)) + 
   theme_map() + 
   theme(legend.position = "bottom")
-```
-
-## Checking for relationships
-
-Does mask use acceptance have any relation with some demographics? Let us explor the relationship between country household income, population, and % who voted republican in 2016
-
-```{r, ggpairs, cache=TRUE}
-county_masks_full %>% 
-  select(hh_income, pop, per_gop_2016, delta) %>% 
-  GGally::ggpairs()+
-  theme_minimal()
 ```
