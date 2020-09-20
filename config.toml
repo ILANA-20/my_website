@@ -104,7 +104,7 @@ disqusShortname = ""
       url = "projects/project2"
 
     [[params.tiles.showcase]]
-      title = "Magna"
+      title = "Graphene Sensors for Detection of Autoimmune Disease"
       subtitle = "Lorem Etiam Nullam"
       image = "projects/image3.png"
       url = "projects/project3"
