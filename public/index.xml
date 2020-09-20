@@ -90,5 +90,15 @@ library(fivethirtyeight)data(drinks)There are four numeric variables: beer_ser
 glimpse(drinks)## Rows: 193## Columns: 5## $ country &amp;lt;chr&amp;gt; &amp;quot;Afghanistan&amp;quot;, &amp;quot;Albania&amp;quot;, &amp;quot;Algeria&amp;quot;, &amp;quot;...## $ beer_servings &amp;lt;int&amp;gt; 0, 89, 25, 245, 217, 102, 193, 21, 261.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>/projects/project4/nyt/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/project4/nyt/</guid>
+      <description>knitr::opts_chunk$set(message = FALSE, warning = FALSE, tidy=FALSE, # display code as typedsize=&amp;quot;small&amp;quot;) # slightly smaller font for codeoptions(digits = 3)# default figure sizeknitr::opts_chunk$set(fig.width=6.75, fig.height=6.75,fig.align = &amp;quot;center&amp;quot;)NYT mask useGithub source for data https://github.com/nytimes/covid-19-data/tree/master/mask-use
+Getting the data#Source for data url &amp;lt;- &amp;quot;https://github.com/nytimes/covid-19-data/raw/master/mask-use/mask-use-by-county.csv&amp;quot;nyt_mask_survey &amp;lt;- read_csv(here::here(&amp;quot;data&amp;quot;, &amp;quot;nyt_mask_survey.csv&amp;quot;))nyt_mask_survey &amp;lt;- nyt_mask_survey %&amp;gt;%clean_names() %&amp;gt;% mutate(mostly_yes= frequently+always,mostly_no = never+rarely,delta = mostly_yes-mostly_no)glimpse(nyt_mask_survey)## Rows: 3,142## Columns: 9## $ countyfp &amp;lt;chr&amp;gt; &amp;quot;01001&amp;quot;, &amp;quot;01003&amp;quot;, &amp;quot;01005&amp;quot;, &amp;quot;01007&amp;quot;, &amp;quot;01009&amp;quot;, &amp;quot;01011&amp;quot;, &amp;quot;0.</description>
+    </item>
+    
   </channel>
 </rss>
