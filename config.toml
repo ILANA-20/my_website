@@ -75,7 +75,7 @@ disqusShortname = ""
     [[params.navigation.button2]]
       name = "Log In"
       url = "#"
-
+ 
 
   # Banner section
   [params.banner]
