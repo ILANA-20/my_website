@@ -86,7 +86,6 @@
 <p>Back in 2014, <a href="https://fivethirtyeight.com/features/dear-mona-followup-where-do-people-drink-the-most-beer-wine-and-spirits/">fivethiryeight.com</a> published an article on alchohol consumption in different countries.</p>
 <pre class="r"><code>library(fivethirtyeight)
 data(drinks)</code></pre>
-<p>JASPER</p>
 <p><strong>There are four numeric variables: <em>beer_servings</em>, <em>spirit_servings</em>, <em>wine_servings</em>, and <em>total_liters_of_pure_alcohol</em>. There is one character variable, <em>country</em>. There are no missing values.</strong></p>
 <pre class="r"><code>glimpse(drinks)</code></pre>
 <pre><code>## Rows: 193
@@ -240,12 +239,14 @@ data(drinks)</code></pre>
 <pre class="r"><code>top25_beer &lt;- top_n(drinks, 25, beer_servings)
 
 ggplot(data = top25_beer, mapping = aes (y = reorder(country, beer_servings), x = beer_servings)) + geom_col(fill=&#39;dark orange&#39;) + labs(title = &quot;Top 25 Beer Consuming Countries&quot;, subtitle = &quot;Namibians are leading beer consumers.&quot;, x = &quot;Beer Servings&quot;, y = &quot;&quot;) +
+  geom_text(aes(label= spirit_servings), vjust=0.3, hjust = 1, color=&quot;black&quot;, size=3) +
   theme_clean()</code></pre>
 <p><img src="/blogs/blog5_files/figure-html/beer_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>NULL</code></pre>
 <pre><code>## NULL</code></pre>
 <pre class="r"><code>top25_wine &lt;- top_n(drinks, 25, wine_servings)
 ggplot(data = top25_wine, mapping = aes (y = reorder(country, wine_servings), x = wine_servings)) +   geom_col(fill=&#39;dark red&#39;) +
+  geom_text(aes(label= spirit_servings), vjust=0.3, hjust = 1.5, color=&quot;white&quot;, size=3) +
 labs(title = &quot;Top 25 Wine Consuming Countries&quot;, x = &quot;Wine Servings&quot;, y = &quot;&quot;) +
   theme_clean() +
   
@@ -253,7 +254,7 @@ NULL</code></pre>
 <p><img src="/blogs/blog5_files/figure-html/wine_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>top25_spirits &lt;- top_n(drinks, 25, spirit_servings)
 ggplot(data = top25_spirits, mapping = aes (y = reorder(country, spirit_servings), x = spirit_servings)) + geom_col(fill=&#39;light blue&#39;) + 
-  geom_text(aes(label= spirit_servings), vjust=0.3, color=&quot;black&quot;, size=3) +
+  geom_text(aes(label= spirit_servings), vjust=0.3, hjust = 1, color=&quot;black&quot;, size=3) +
   labs(title = &quot;Top 25 Spirits Consuming Countries&quot;, y = &quot;&quot;, x = &quot;Spirits Servings&quot;) +
   theme_clean() +
   

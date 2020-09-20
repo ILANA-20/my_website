@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lifestyle on My Portfolio</title>
+    <title>My projects on My Portfolio</title>
     <link>/blogs/</link>
-    <description>Recent content in Lifestyle on My Portfolio</description>
+    <description>Recent content in My projects on My Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Oct 2017 22:27:21 -0500</lastBuildDate><atom:link href="/blogs/index.xml" rel="self" type="application/rss+xml" />
@@ -14,8 +14,7 @@
       
       <guid>/blogs/blog5/</guid>
       <description>Where Do People Drink The Most Beer, Wine And Spirits?Back in 2014, fivethiryeight.com published an article on alchohol consumption in different countries.
-library(fivethirtyeight)data(drinks)JASPER
-There are four numeric variables: beer_servings, spirit_servings, wine_servings, and total_liters_of_pure_alcohol. There is one character variable, country. There are no missing values.
+library(fivethirtyeight)data(drinks)There are four numeric variables: beer_servings, spirit_servings, wine_servings, and total_liters_of_pure_alcohol. There is one character variable, country. There are no missing values.
 glimpse(drinks)## Rows: 193## Columns: 5## $ country &amp;lt;chr&amp;gt; &amp;quot;Afghanistan&amp;quot;, &amp;quot;Albania&amp;quot;, &amp;quot;Algeria&amp;quot;, &amp;quot;...## $ beer_servings &amp;lt;int&amp;gt; 0, 89, 25, 245, 217, 102, 193, 21, 261.</description>
     </item>
     
