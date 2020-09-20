@@ -1,5 +1,13 @@
 ---
-site: blogdown:::blogdown_site
+categories:
+  - ""
+  -""
+  date: "2020-09-28"
+  description: Alhocol Consumption
+  draft: false
+  keywords: ""
+  slug: alcohol
+  title: Alhocol Consumption per Country
 ---
 
 

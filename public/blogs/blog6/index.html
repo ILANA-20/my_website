@@ -79,19 +79,6 @@
                             
 
 
-<pre class="r"><code>knitr::opts_chunk$set(
-  message = FALSE, 
-  warning = FALSE, 
-  tidy=FALSE,     # display code as typed
-  size=&quot;small&quot;)   # slightly smaller font for code
-options(digits = 3)
-
-# default figure size
-knitr::opts_chunk$set(
-  fig.width=6.75, 
-  fig.height=6.75,
-  fig.align = &quot;center&quot;
-)</code></pre>
 <div id="nyt-mask-use" class="section level2">
 <h2>NYT mask use</h2>
 <p>Github source for data <a href="https://github.com/nytimes/covid-19-data/tree/master/mask-use" class="uri">https://github.com/nytimes/covid-19-data/tree/master/mask-use</a></p>
@@ -133,43 +120,43 @@ glimpse(nyt_mask_survey)</code></pre>
 county_map %&gt;% 
   sample_n(5)</code></pre>
 <pre><code>##       long      lat  order  hole piece            group    id
-## 1   308747 -1868612 155459 FALSE     3 0500000US48007.3 48007
-## 2  -900681   347690 109043 FALSE     1 0500000US30099.1 30099
-## 3   290478    91227  95109 FALSE     1 0500000US27155.1 27155
-## 4  1512659  -735780 175849 FALSE     1 0500000US51195.1 51195
-## 5 -1496737 -2082743   6720 FALSE     1 0500000US02050.1 02050</code></pre>
+## 1 -1359556  -195546 112550 FALSE     1 0500000US32007.1 32007
+## 2  -421410 -1704721 163035 FALSE     1 0500000US48377.1 48377
+## 3  1491784  -661550  67587 FALSE     1 0500000US21153.1 21153
+## 4  2042221  -303338  34233 FALSE     1 0500000US10003.1 10003
+## 5  1087045 -1139233   2847 FALSE     1 0500000US01093.1 01093</code></pre>
 <pre class="r"><code>county_data %&gt;%
     sample_n(5)</code></pre>
 <pre><code>##      id                name state census_region      pop_dens   pop_dens4
-## 1 06105      Trinity County    CA          West [    0,   10) [  0,   17)
-## 2 27023     Chippewa County    MN       Midwest [   10,   50) [ 17,   45)
-## 3 16023        Butte County    ID          West [    0,   10) [  0,   17)
-## 4 06023     Humboldt County    CA          West [   10,   50) [ 17,   45)
-## 5 51041 Chesterfield County    VA         South [  500, 1000) [118,71672]
-##     pop_dens6   pct_black    pop female white black travel_time land_area
-## 1 [  0,    9) [ 0.0, 2.0)  13170   48.7  88.2   0.6        18.3      3179
-## 2 [  9,   25) [ 0.0, 2.0)  12110   50.6  95.4   0.7        18.0       581
-## 3 [  0,    9) [ 0.0, 2.0)   2622   48.4  96.1   0.4        21.0      2232
-## 4 [ 25,   45) [ 0.0, 2.0) 134809   50.0  84.4   1.3        17.5      3568
-## 5 [215,71672] [15.0,25.0) 332499   51.9  69.9  23.2        25.5       423
+## 1 51177 Spotsylvania County    VA         South [  100,  500) [118,71672]
+## 2 51131  Northampton County    VA         South [   50,  100) [ 45,  118)
+## 3 06063       Plumas County    CA          West [    0,   10) [  0,   17)
+## 4 39049     Franklin County    OH       Midwest [ 1000, 5000) [118,71672]
+## 5 04023   Santa Cruz County    AZ          West [   10,   50) [ 17,   45)
+##     pop_dens6   pct_black     pop female white black travel_time land_area
+## 1 [215,71672] [15.0,25.0)  129188   50.9  77.9  15.9        38.0       402
+## 2 [ 45,   82) [25.0,50.0)   12121   52.2  61.3  35.8        18.8       212
+## 3 [  0,    9) [ 0.0, 2.0)   18606   49.9  91.1   1.0        22.9      2553
+## 4 [215,71672] [15.0,25.0) 1231393   51.3  70.4  22.0        21.5       532
+## 5 [ 25,   45) [ 0.0, 2.0)   46695   51.9  96.3   0.8        19.8      1237
 ##   hh_income su_gun4 su_gun6  fips votes_dem_2016 votes_gop_2016
-## 1     36890 [11,54] [12,54]  6105           1876           2409
-## 2     49434 [ 5, 8) [ 4, 7) 27023           1978           3764
-## 3     41131 [ 0, 5) [ 0, 4) 16023            160            914
-## 4     41426 [ 8,11) [10,12)  6023          19596          10883
-## 5     72088 [ 5, 8) [ 7, 8) 51041          80993          84938
+## 1     78345 [ 5, 8) [ 4, 7) 51177          24204          34619
+## 2     33635 [ 8,11) [ 8,10) 51131           3255           2686
+## 3     45794 [11,54] [12,54]  6063           3224           5079
+## 4     50877 [ 5, 8) [ 4, 7) 39049         335961         192328
+## 5     37745 [ 0, 5) [ 4, 7)  4023          10684           3650
 ##   total_votes_2016 per_dem_2016 per_gop_2016 diff_2016 per_dem_2012
-## 1             4716        0.398        0.511       533        0.471
-## 2             6182        0.320        0.609      1786        0.499
-## 3             1230        0.130        0.743       754        0.201
-## 4            33636        0.583        0.324      8713        0.600
-## 5           175288        0.462        0.485      3945        0.458
+## 1            62083        0.390        0.558     10415        0.435
+## 2             6134        0.531        0.438       569        0.577
+## 3             8830        0.365        0.575      1855        0.402
+## 4           554711        0.606        0.347    143633        0.601
+## 5            14926        0.716        0.245      7034        0.683
 ##   per_gop_2012 diff_2012  winner partywinner16 winner12 partywinner12 flipped
-## 1        0.482        55   Trump    Republican   Romney    Republican      No
-## 2        0.480       116   Trump    Republican    Obama      Democrat     Yes
-## 3        0.778       743   Trump    Republican   Romney    Republican      No
-## 4        0.338     12104 Clinton      Democrat    Obama      Democrat      No
-## 5        0.529     12220   Trump    Republican   Romney    Republican      No</code></pre>
+## 1        0.551      6668   Trump    Republican   Romney    Republican      No
+## 2        0.413      1061 Clinton      Democrat    Obama      Democrat      No
+## 3        0.574      1570   Trump    Republican   Romney    Republican      No
+## 4        0.384    117713 Clinton      Democrat    Obama      Democrat      No
+## 5        0.305      5251 Clinton      Democrat    Obama      Democrat      No</code></pre>
 <pre class="r"><code>glimpse(county_data)</code></pre>
 <pre><code>## Rows: 3,195
 ## Columns: 32
