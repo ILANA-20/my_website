@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>A</title>
+    <title>My Portfolio</title>
     <link>/</link>
-    <description>Recent content on A</description>
+    <description>Recent content on My Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Oct 2017 22:42:51 -0500</lastBuildDate>
-    
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sat, 31 Oct 2020 21:28:43 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alcohol Consumption</title>
+      <link>/blogs/blog5/</link>
+      <pubDate>Sat, 31 Oct 2020 21:28:43 -0500</pubDate>
+      
+      <guid>/blogs/blog5/</guid>
+      <description>Where Do People Drink The Most Beer, Wine And Spirits?Back in 2014, fivethiryeight.com published an article on alchohol consumption in different countries.
+library(fivethirtyeight)data(drinks)JASPER
+There are four numeric variables: beer_servings, spirit_servings, wine_servings, and total_liters_of_pure_alcohol. There is one character variable, country. There are no missing values.
+glimpse(drinks)## Rows: 193## Columns: 5## $ country &amp;lt;chr&amp;gt; &amp;quot;Afghanistan&amp;quot;, &amp;quot;Albania&amp;quot;, &amp;quot;Algeria&amp;quot;, &amp;quot;...## $ beer_servings &amp;lt;int&amp;gt; 0, 89, 25, 245, 217, 102, 193, 21, 261.</description>
+    </item>
     
     <item>
       <title>Aliquam</title>
@@ -17,6 +25,15 @@
       <pubDate>Tue, 31 Oct 2017 22:42:51 -0500</pubDate>
       
       <guid>/blogs/aliquam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MY ANALYTICS PROJECTS</title>
+      <link>/projects/project1/</link>
+      <pubDate>Tue, 31 Oct 2017 22:27:21 -0500</pubDate>
+      
+      <guid>/projects/project1/</guid>
       <description></description>
     </item>
     
@@ -60,24 +77,20 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     
     <item>
       <title></title>
-      <link>/blogs/blog5/</link>
+      <link>/projects/project2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/blogs/blog5/</guid>
-      <description>Where Do People Drink The Most Beer, Wine And Spirits?Back in 2014, fivethiryeight.com published an article on alchohol consumption in different countries.
-library(fivethirtyeight)data(drinks)There are four numeric variables: beer_servings, spirit_servings, wine_servings, and total_liters_of_pure_alcohol. There is one character variable, country. There are no missing values.
-glimpse(drinks)## Rows: 193## Columns: 5## $ country &amp;lt;chr&amp;gt; &amp;quot;Afghanistan&amp;quot;, &amp;quot;Albania&amp;quot;, &amp;quot;Algeria&amp;quot;, &amp;quot;...## $ beer_servings &amp;lt;int&amp;gt; 0, 89, 25, 245, 217, 102, 193, 21, 261.</description>
+      <guid>/projects/project2/</guid>
+      <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/projects/project1/</link>
+      <link>/projects/project3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/project1/</guid>
-      <description>Where Do People Drink The Most Beer, Wine And Spirits?Back in 2014, fivethiryeight.com published an article on alchohol consumption in different countries.
-library(fivethirtyeight)data(drinks)There are four numeric variables: beer_servings, spirit_servings, wine_servings, and total_liters_of_pure_alcohol. There is one character variable, country. There are no missing values.
-glimpse(drinks)## Rows: 193## Columns: 5## $ country &amp;lt;chr&amp;gt; &amp;quot;Afghanistan&amp;quot;, &amp;quot;Albania&amp;quot;, &amp;quot;Algeria&amp;quot;, &amp;quot;...## $ beer_servings &amp;lt;int&amp;gt; 0, 89, 25, 245, 217, 102, 193, 21, 261.</description>
+      <guid>/projects/project3/</guid>
+      <description></description>
     </item>
     
     <item>
