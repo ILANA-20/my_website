@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ILANA</title>
+    <title>A</title>
     <link>/</link>
-    <description>Recent content on ILANA</description>
+    <description>Recent content on A</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 31 Oct 2017 22:42:51 -0500</lastBuildDate>
@@ -56,6 +56,28 @@
       <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/blogs/blog5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blogs/blog5/</guid>
+      <description>Where Do People Drink The Most Beer, Wine And Spirits?Back in 2014, fivethiryeight.com published an article on alchohol consumption in different countries.
+library(fivethirtyeight)data(drinks)There are four numeric variables: beer_servings, spirit_servings, wine_servings, and total_liters_of_pure_alcohol. There is one character variable, country. There are no missing values.
+glimpse(drinks)## Rows: 193## Columns: 5## $ country &amp;lt;chr&amp;gt; &amp;quot;Afghanistan&amp;quot;, &amp;quot;Albania&amp;quot;, &amp;quot;Algeria&amp;quot;, &amp;quot;...## $ beer_servings &amp;lt;int&amp;gt; 0, 89, 25, 245, 217, 102, 193, 21, 261.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/projects/project1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/project1/</guid>
+      <description>Where Do People Drink The Most Beer, Wine And Spirits?Back in 2014, fivethiryeight.com published an article on alchohol consumption in different countries.
+library(fivethirtyeight)data(drinks)There are four numeric variables: beer_servings, spirit_servings, wine_servings, and total_liters_of_pure_alcohol. There is one character variable, country. There are no missing values.
+glimpse(drinks)## Rows: 193## Columns: 5## $ country &amp;lt;chr&amp;gt; &amp;quot;Afghanistan&amp;quot;, &amp;quot;Albania&amp;quot;, &amp;quot;Algeria&amp;quot;, &amp;quot;...## $ beer_servings &amp;lt;int&amp;gt; 0, 89, 25, 245, 217, 102, 193, 21, 261.</description>
     </item>
     
   </channel>
