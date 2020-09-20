@@ -1,7 +1,9 @@
 ---
 site: blogdown:::blogdown_site
 ---
-```{r, setup, echo=TRUE}
+
+
+```{r, setup, echo=FALSE}
 knitr::opts_chunk$set(
   message = FALSE, 
   warning = FALSE, 
