@@ -1,82 +1,7 @@
-<!DOCTYPE HTML>
-<html>
+---
+site: blogdown:::blogdown_site
+---
 
-    <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="Engineer">
-	<meta name="author" content="Ilana Kovalenko">
-	<meta name="generator" content="Hugo 0.74.3" />
-	<title> &middot; A</title>
-	<!-- Stylesheets -->
-	
-	<link rel="stylesheet" href="/css/main.css"/>
-	
-	
-
-	
-
-	<!-- Custom Fonts -->
-	<link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-	
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-	<link rel="icon" type="image/x-icon" href="/favicon.ico">
-	
-
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	<script src="js/ie/html5shiv.js"></script>
-	<script src="js/ie/html5shiv.jsrespond.min.js"></script>
-	<![endif]-->
-</head>
-
-    <body>
-
-    <!-- Wrapper -->
-        <div id="wrapper">
-
-            <!-- Header -->
-    <header id="header" class="alt">
-        <a href="/" class="logo"><strong>Ilana Kovalenko</strong> <span>PORTFOLIO</span></a>
-        <nav>
-            <a href="#menu">Menu</a>
-        </nav>
-    </header>
-
-<!-- Menu -->
-    <nav id="menu">
-        <ul class="links">
-            
-                <li><a href="/">Home</a></li>
-            
-                <li><a href="/blogs">Blogs</a></li>
-            
-
-        </ul>
-        <ul class="actions vertical">
-            
-                <li><a href="/blogs" class="button special fit">Get Started</a></li>
-            
-            
-                <li><a href="/" class="button fit">Log In</a></li>
-            
-        </ul>
-    </nav>
-
-        <!-- Main -->
-            <div id="main" class="alt">
-
-                
-                    <section id="one">
-                        <div class="inner">
-                            <header class="major">
-                                <h1></h1>
-                            </header>
-                            
-                            
 
 
 <pre class="r"><code>knitr::opts_chunk$set(
@@ -133,43 +58,43 @@ glimpse(nyt_mask_survey)</code></pre>
 county_map %&gt;% 
   sample_n(5)</code></pre>
 <pre><code>##       long      lat  order  hole piece            group    id
-## 1 -1758251 -2492068   5410 FALSE     3 0500000US02016.3 02016
-## 2  1365751 -1464369  39088 FALSE     1 0500000US12133.1 12133
-## 3  2482073   455417  78327 FALSE     2 0500000US23029.2 23029
-## 4 -1103032   283119 107566 FALSE     1 0500000US30063.1 30063
-## 5  1526238  -652087  67801 FALSE     1 0500000US21159.1 21159</code></pre>
+## 1  -959556  -523346 166116 FALSE     1 0500000US49007.1 49007
+## 2   850131   305017  87475 FALSE     1 0500000US26061.1 26061
+## 3 -1273362   269413  50203 FALSE     1 0500000US16061.1 16061
+## 4  2145410   -38496 118481 FALSE     1 0500000US36027.1 36027
+## 5 -1274894 -1759837  13118 FALSE     1 0500000US02188.1 02188</code></pre>
 <pre class="r"><code>county_data %&gt;%
     sample_n(5)</code></pre>
-<pre><code>##      id            name state census_region      pop_dens   pop_dens4
-## 1 29037     Cass County    MO       Midwest [  100,  500) [118,71672]
-## 2 19045  Clinton County    IA       Midwest [   50,  100) [ 45,  118)
-## 3 45071 Newberry County    SC         South [   50,  100) [ 45,  118)
-## 4 13145   Harris County    GA         South [   50,  100) [ 45,  118)
-## 5 01045     Dale County    AL         South [   50,  100) [ 45,  118)
-##     pop_dens6   pct_black    pop female white black travel_time land_area
-## 1 [ 82,  215) [ 2.0, 5.0) 100889   51.0  92.6   4.0        27.8       697
-## 2 [ 45,   82) [ 2.0, 5.0)  48051   50.9  94.2   3.1        19.2       695
-## 3 [ 45,   82) [25.0,50.0)  37783   51.1  65.6  31.2        24.4       630
-## 4 [ 45,   82) [15.0,25.0)  32876   50.1  80.1  17.0        26.6       464
-## 5 [ 82,  215) [15.0,25.0)  49484   50.5  75.3  19.6        20.9       561
+<pre><code>##      id               name state census_region      pop_dens   pop_dens4
+## 1 40083       Logan County    OK         South [   50,  100) [ 45,  118)
+## 2 48417 Shackelford County    TX         South [    0,   10) [  0,   17)
+## 3 47043     Dickson County    TN         South [  100,  500) [ 45,  118)
+## 4 37165    Scotland County    NC         South [  100,  500) [ 45,  118)
+## 5 37059       Davie County    NC         South [  100,  500) [118,71672]
+##     pop_dens6   pct_black   pop female white black travel_time land_area
+## 1 [ 45,   82) [ 5.0,10.0) 45276   50.6  82.3   9.2        27.4       744
+## 2 [  0,    9) [ 0.0, 2.0)  3343   51.3  96.1   1.3        18.7       914
+## 3 [ 82,  215) [ 2.0, 5.0) 50575   50.8  92.9   4.3        30.5       490
+## 4 [ 82,  215) [25.0,50.0) 35576   50.8  46.5  39.1        21.5       319
+## 5 [ 82,  215) [ 5.0,10.0) 41434   51.2  90.5   6.5        25.9       264
 ##   hh_income su_gun4 su_gun6  fips votes_dem_2016 votes_gop_2016
-## 1     60350 [ 8,11) [ 8,10) 29037          14816          33006
-## 2     49559 [ 5, 8) [ 7, 8) 19045          10079          11249
-## 3     41718 [ 8,11) [ 8,10) 45071           6212          10011
-## 4     69223 [ 8,11) [10,12) 13145           4082          11931
-## 5     44889 [ 8,11) [ 8,10)  1045           4408          13798
+## 1     53591 [ 8,11) [ 8,10) 40083           4239          13613
+## 2     47277 [ 0, 5) [ 0, 4) 48417            103           1378
+## 3     44318 [ 8,11) [10,12) 47043           4718          13213
+## 4     29592 [ 0, 5) [ 4, 7) 37165           7279           6212
+## 5     50139 [ 8,11) [ 8,10) 37059           5228          15502
 ##   total_votes_2016 per_dem_2016 per_gop_2016 diff_2016 per_dem_2012
-## 1            50715        0.292        0.651     18190        0.348
-## 2            22748        0.443        0.495      1170        0.608
-## 3            16795        0.370        0.596      3799        0.423
-## 4            16392        0.249        0.728      7849        0.268
-## 5            18617        0.237        0.741      9390        0.285
-##   per_gop_2012 diff_2012 winner partywinner16 winner12 partywinner12 flipped
-## 1        0.632     13868  Trump    Republican   Romney    Republican      No
-## 2        0.379      5700  Trump    Republican    Obama      Democrat     Yes
-## 3        0.566      2327  Trump    Republican   Romney    Republican      No
-## 4        0.723      7052  Trump    Republican   Romney    Republican      No
-## 5        0.706      7822  Trump    Republican   Romney    Republican      No</code></pre>
+## 1            18948       0.2237        0.718      9374       0.2759
+## 2             1502       0.0686        0.917      1275       0.0961
+## 3            18619       0.2534        0.710      8495       0.3495
+## 4            13743       0.5297        0.452      1067       0.5800
+## 5            21350       0.2449        0.726     10274       0.2768
+##   per_gop_2012 diff_2012  winner partywinner16 winner12 partywinner12 flipped
+## 1        0.724      7611   Trump    Republican   Romney    Republican      No
+## 2        0.894      1087   Trump    Republican   Romney    Republican      No
+## 3        0.633      5059   Trump    Republican   Romney    Republican      No
+## 4        0.414      2332 Clinton      Democrat    Obama      Democrat      No
+## 5        0.713      8916   Trump    Republican   Romney    Republican      No</code></pre>
 <pre class="r"><code>glimpse(county_data)</code></pre>
 <pre><code>## Rows: 3,195
 ## Columns: 32
@@ -255,72 +180,17 @@ p3 &lt;- p1 +
 p4 &lt;- p1 + 
   scale_fill_gradientn(colours = c(&#39;#8c510a&#39;,&#39;#d8b365&#39;,&#39;#f6e8c3&#39;,&#39;#c7eae5&#39;,&#39;#5ab4ac&#39;,&#39;#01665e&#39;))</code></pre>
 <pre class="r"><code>p1</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-5-1.png" width="648" style="display: block; margin: auto;" /></p>
+<p><img src="/projects/project4/NYT_files/figure-html/unnamed-chunk-5-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>p2</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-6-1.png" width="648" style="display: block; margin: auto;" /></p>
+<p><img src="/projects/project4/NYT_files/figure-html/unnamed-chunk-6-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>p3</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-7-1.png" width="648" style="display: block; margin: auto;" /></p>
+<p><img src="/projects/project4/NYT_files/figure-html/unnamed-chunk-7-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>p4</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-8-1.png" width="648" style="display: block; margin: auto;" /></p>
+<p><img src="/projects/project4/NYT_files/figure-html/unnamed-chunk-8-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>p4 + labs(fill = &quot;Mask acceptance, (Mostly Yes - Mostly No)&quot;, 
           caption = &quot;“Estimates from The New York Times, based on roughly 250,000 interviews \nconducted by Dynata from July 2 to July 14, 2020”&quot;) +
   guides(fill = guide_legend(nrow = 1)) + 
   theme_map() + 
   theme(legend.position = &quot;bottom&quot;)</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-9-1.png" width="648" style="display: block; margin: auto;" /></p>
+<p><img src="/projects/project4/NYT_files/figure-html/unnamed-chunk-9-1.png" width="648" style="display: block; margin: auto;" /></p>
 </div>
-
-                        </div>
-                    </section>
-            <!-- Disqus Inject -->
-                
-            </div>
-            
-        <!-- Footer -->
-            
-                <!-- Footer -->
-    <footer id="footer">
-        <div class="inner">
-            <ul class="icons">
-                
-                    <li><a href="https://www.facebook.com/profile.php?id=100011820909964" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
-                
-                    <li><a href="https://www.instagram.com/ilana_996/" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-                
-                    <li><a href="https://github.com/ILANA-20" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-                
-                    <li><a href="https://www.linkedin.com/in/ilana-k-674379132/" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-                
-            </ul>
-            <ul class="copyright">
-                <li>&copy; London Business School</li>
-                
-                <li>Design:  <a href="https://www.html5up.net">HTML5 UP</a></li>
-                
-            </ul>
-        </div>
-    </footer>
-
-            
-        </div>
-
-    <!-- Scripts -->
-        <!-- Scripts -->
-    <!-- jQuery -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.scrolly.min.js"></script>
-    <script src="/js/jquery.scrollex.min.js"></script>
-    <script src="/js/skel.min.js"></script>
-    <script src="/js/util.js"></script>
-
-    
-
-    <!-- Main JS -->
-    <script src="/js/main.js"></script>
-
-    
-
-    
-
-    </body>
-</html>

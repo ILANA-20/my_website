@@ -51,9 +51,9 @@ disqusShortname = ""
       name = "Blogs"
       url = "blogs"
 
-    [[params.navigation.links]]
-      name = "Generic Blog"
-      url = "blogs/ipsum"
+    #[[params.navigation.links]]
+      #name = "Generic Blog"
+     # url = "blogs/ipsum"
 
    # [[params.navigation.links]]
     #  name = "Elements"
@@ -110,9 +110,9 @@ disqusShortname = ""
       url = "projects/project3"
 
     [[params.tiles.showcase]]
-      title = "NYT mask"
-      subtitle = "Masks"
-      image = "image4.jpg"
+      title = "NYT masks"
+      subtitle = "Mask Usage in the US"
+      image = "image5.jpg"
       url = "projects/project4"
 
     #[[params.tiles.showcase]]
