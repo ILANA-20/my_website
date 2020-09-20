@@ -10,14 +10,14 @@ output:
     toc_float: yes
   word_document:
     toc: yes
----
+--- 
 
 
 
 ```{r, setup, echo=FALSE}
 knitr::opts_chunk$set(
   message = FALSE, 
-  warning = FALSE, 
+  warning = FALSE,  
   tidy=FALSE,     # display code as typed
   size="small")   # slightly smaller font for code
 options(digits = 3)
