@@ -110,7 +110,7 @@ disqusShortname = ""
       url = "projects/project3"
 
     [[params.tiles.showcase]]
-      title = "Ipsum"
+      title = "NYT mask"
       subtitle = "Nisl Sed Aliquam"
       image = "image4.jpg"
       url = "projects/project4"
