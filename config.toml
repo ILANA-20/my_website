@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "https://ilana-portfolio.netlify.app/"
 languageCode = "en-us"
-title = "Portfolio website of Ilana Kovalenko"
+title = "A"
 theme = "forty"
 
 # Enter your tracking code to enable Google Analytics
@@ -106,7 +106,7 @@ disqusShortname = ""
     [[params.tiles.showcase]]
       title = "Magna"
       subtitle = "Lorem Etiam Nullam"
-      image = "projects/image3.jpg"
+      image = "projects/image3.png"
       url = "projects/project3"
 
     [[params.tiles.showcase]]
