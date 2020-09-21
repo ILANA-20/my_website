@@ -8,7 +8,7 @@
     <language>en-us</language>
     <lastBuildDate>Sat, 31 Oct 2020 21:28:43 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Alcohol Consumption</title>
+      <title>Alcohol Consumption per Country</title>
       <link>/blogs/blog5/</link>
       <pubDate>Sat, 31 Oct 2020 21:28:43 -0500</pubDate>
       
@@ -19,9 +19,9 @@ glimpse(drinks)## Rows: 193## Columns: 5## $ country &amp;lt;chr&amp;gt; &amp
     </item>
     
     <item>
-      <title>NYT Mask Use Acceptance</title>
+      <title>NYT masks</title>
       <link>/blogs/blog6/</link>
-      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 31 Oct 2020 21:28:43 -0500</pubDate>
       
       <guid>/blogs/blog6/</guid>
       <description>NYT mask useGithub source for data https://github.com/nytimes/covid-19-data/tree/master/mask-use

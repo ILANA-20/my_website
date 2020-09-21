@@ -1,17 +1,15 @@
 ---
-title: "NYT Mask Use Acceptance"
-author: "Your name goes here"
-date: "`r Sys.Date()`"
-output:
-  html_document:
-    highlight: zenburn
-    theme: flatly
-    toc: yes
-    toc_float: yes
-  word_document:
-    toc: yes
+title: "NYT masks"
+date: '2020-10-31T21:28:43-05:00'
+description: ''
+draft: no
+#image: pic10.jpg
+keywords: ''
+slug: blog6
+categories:
+- ''
+- ''
 ---
-
 
 
 ```{r, setup, echo=FALSE}
@@ -167,13 +165,3 @@ p4 + labs(fill = "Mask acceptance, (Mostly Yes - Mostly No)",
   theme(legend.position = "bottom")
 ```
 
-## Checking for relationships
-
-Does mask use acceptance have any relation with some demographics? Let us explore the relationship between country household income, population, and % who voted republican in 2016
-
-```{r, ggpairs, cache=TRUE}
-county_masks_full %>% 
-  select(hh_income, pop, per_gop_2016, delta) %>% 
-  GGally::ggpairs(alpha = 0.4)+
-  theme_minimal()
-```

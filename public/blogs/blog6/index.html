@@ -8,7 +8,7 @@
 	<meta name="description" content="Engineer">
 	<meta name="author" content="Ilana Kovalenko">
 	<meta name="generator" content="Hugo 0.75.1" />
-	<title>NYT Mask Use Acceptance &middot; My Portfolio</title>
+	<title>NYT masks &middot; My Portfolio</title>
 	<!-- Stylesheets -->
 	
 	<link rel="stylesheet" href="/css/main.css"/>
@@ -73,7 +73,7 @@
                     <section id="one">
                         <div class="inner">
                             <header class="major">
-                                <h1>NYT Mask Use Acceptance</h1>
+                                <h1>NYT masks</h1>
                             </header>
                             
                             
@@ -121,43 +121,43 @@ glimpse(nyt_mask_survey) </code></pre>
 county_map %&gt;% 
   sample_n(5)</code></pre>
 <pre><code>##       long      lat  order  hole piece            group    id
-## 1  1537825  -500830 131690 FALSE     1 0500000US39105.1 39105
-## 2   506697 -1245352 134848 FALSE     1 0500000US40089.1 40089
-## 3   345672 -1596040 156452 FALSE     1 0500000US48041.1 48041
-## 4  1414629  -639675  68051 FALSE     1 0500000US21165.1 21165
-## 5 -1258297  -873245  18486 FALSE     1 0500000US04015.1 04015</code></pre>
+## 1  1690232 -1131198 143802 FALSE     1 0500000US45011.1 45011
+## 2   802309 -1501978  99819 FALSE     1 0500000US28157.1 28157
+## 3   349852 -1596204 156447 FALSE     1 0500000US48041.1 48041
+## 4 -1795312   532028 177978 FALSE     1 0500000US53027.1 53027
+## 5 -2015883  -333527  25951 FALSE     1 0500000US06045.1 06045</code></pre>
 <pre class="r"><code>county_data %&gt;%
     sample_n(5)</code></pre>
-<pre><code>##      id             name state census_region      pop_dens   pop_dens4
-## 1 08005  Arapahoe County    CO          West [  500, 1000) [118,71672]
-## 2 39119 Muskingum County    OH       Midwest [  100,  500) [118,71672]
-## 3 47137   Pickett County    TN         South [   10,   50) [ 17,   45)
-## 4 32031    Washoe County    NV          West [   50,  100) [ 45,  118)
-## 5 08057   Jackson County    CO          West [    0,   10) [  0,   17)
+<pre><code>##      id            name state census_region      pop_dens   pop_dens4
+## 1 36063  Niagara County    NY     Northeast [  100,  500) [118,71672]
+## 2 47071   Hardin County    TN         South [   10,   50) [ 17,   45)
+## 3 13129   Gordon County    GA         South [  100,  500) [118,71672]
+## 4 22083 Richland Parish    LA         South [   10,   50) [ 17,   45)
+## 5 31113    Logan County    NE       Midwest [    0,   10) [  0,   17)
 ##     pop_dens6   pct_black    pop female white black travel_time land_area
-## 1 [215,71672] [10.0,15.0) 618821   50.8  78.8  10.8        26.9       798
-## 2 [ 82,  215) [ 2.0, 5.0)  85818   51.5  92.8   3.9        24.4       665
-## 3 [ 25,   45) [ 0.0, 2.0)   5124   50.2  98.8   0.2        27.0       163
-## 4 [ 45,   82) [ 2.0, 5.0) 440078   49.6  85.7   2.6        21.5      6302
-## 5 [  0,    9) [ 0.0, 2.0)   1396   45.9  96.2   0.1        18.9      1614
+## 1 [215,71672] [ 5.0,10.0) 213525   51.3  88.6   7.0        21.1       522
+## 2 [ 25,   45) [ 2.0, 5.0)  25870   51.5  94.0   3.7        22.2       577
+## 3 [ 82,  215) [ 2.0, 5.0)  56047   50.2  92.2   4.4        23.0       356
+## 4 [ 25,   45) [25.0,50.0)  20740   52.0  62.6  35.9        20.3       559
+## 5 [  0,    9) [ 0.0, 2.0)    750   51.6  97.2   0.4        27.3       571
 ##   hh_income su_gun4 su_gun6  fips votes_dem_2016 votes_gop_2016
-## 1     60651 [ 5, 8) [ 7, 8)  8005         148365         109638
-## 2     40524 [ 8,11) [ 8,10) 39119          10926          23588
-## 3     35184 [11,54] [12,54] 47137            536           2019
-## 4     53040 [11,54] [10,12) 32031          97032          94529
-## 5     43606 [ 0, 5) [ 0, 4)  8057            171            628
+## 1     47955 [ 0, 5) [ 4, 7) 36063          32888          49223
+## 2     33622 [11,54] [12,54] 47071           1622           8012
+## 3     40926 [ 5, 8) [ 4, 7) 13129           3176          15171
+## 4     36835 [ 8,11) [ 8,10) 22083           3157           6286
+## 5     44417 [ 0, 5) [ 0, 4) 31113             32            400
 ##   total_votes_2016 per_dem_2016 per_gop_2016 diff_2016 per_dem_2012
-## 1           281658        0.527        0.389     38727        0.532
-## 2            36217        0.302        0.651     12662        0.454
-## 3             2609        0.205        0.774      1483        0.291
-## 4           209282        0.464        0.452      2503        0.507
-## 5              862        0.198        0.729       457        0.255
-##   per_gop_2012 diff_2012  winner partywinner16 winner12 partywinner12 flipped
-## 1        0.448     21201 Clinton      Democrat    Obama      Democrat      No
-## 2        0.524      2499   Trump    Republican   Romney    Republican      No
-## 3        0.698       996   Trump    Republican   Romney    Republican      No
-## 4        0.472      6655 Clinton      Democrat    Obama      Democrat      No
-## 5        0.708       384   Trump    Republican   Romney    Republican      No</code></pre>
+## 1            86000        0.382        0.572     16335        0.494
+## 2             9949        0.163        0.805      6390        0.235
+## 3            18850        0.168        0.805     11995        0.204
+## 4             9596        0.329        0.655      3129        0.354
+## 5              451        0.071        0.887       368        0.158
+##   per_gop_2012 diff_2012 winner partywinner16 winner12 partywinner12 flipped
+## 1        0.488       465  Trump    Republican    Obama      Democrat     Yes
+## 2        0.751      5419  Trump    Republican   Romney    Republican      No
+## 3        0.782      9738  Trump    Republican   Romney    Republican      No
+## 4        0.636      3242  Trump    Republican   Romney    Republican      No
+## 5        0.826       288  Trump    Republican   Romney    Republican      No</code></pre>
 <pre class="r"><code>glimpse(county_data)</code></pre>
 <pre><code>## Rows: 3,195
 ## Columns: 32
@@ -257,15 +257,6 @@ p1</code></pre>
   theme_map() + 
   theme(legend.position = &quot;bottom&quot;)</code></pre>
 <p><img src="/blogs/blog6_files/figure-html/unnamed-chunk-8-1.png" width="648" style="display: block; margin: auto;" /></p>
-</div>
-<div id="checking-for-relationships" class="section level2">
-<h2>Checking for relationships</h2>
-<p>Does mask use acceptance have any relation with some demographics? Let us explore the relationship between country household income, population, and % who voted republican in 2016</p>
-<pre class="r"><code>county_masks_full %&gt;% 
-  select(hh_income, pop, per_gop_2016, delta) %&gt;% 
-  GGally::ggpairs(alpha = 0.4)+
-  theme_minimal()</code></pre>
-<p><img src="/blogs/blog6_files/figure-html/ggpairs-1.png" width="648" style="display: block; margin: auto;" /></p>
 </div>
 
                         </div>
